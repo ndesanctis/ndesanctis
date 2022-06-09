@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<header>
+  <title>Product Survey Form</title>
+  <link rel="stylesheet" href="styles.css" />
+  </header>
+  <body>
+    <h1 id="title">Product Survey Form</h1>
+    <p id="description">Please take the time to share your opinion of our product</p>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label">Name <input type="text" id="name" placeholder="Enter your name" required /></label>
+        <label id="email-label">Email <input type="email" id="email" placeholder="Enter your Email" required /></label>
+        <label id="number-label">Age (optional) <input type="number" id="number" min="18" max="120" placeholder="Age"/></label>
+        <label>How would you rate this product? <select id="dropdown"><option value="">(select one)</option>
+        <option value="1">Great</option>
+        <option value="2">Good</opton>
+        <option value="3">Neutral</option>
+        <option value="4">Bad</option></fieldset>
+        <fieldset>
+      <label for="personal"><input type="radio" name="use" id="personal" value="personal" />Personal use</label>
+        <label for="business"><input type="radio" name="use" id="business" value="business" />Business use</label>
+</fieldset>        <fieldset>what would make you more likely to recommend?<label><input type="checkbox" value="1" />Cheaper Price</label>
+        <label><input type="checkbox" value="2" />Faster Shipping</label>
+        <label><input type="checkbox" value="3" />Better Customer Service</label>
+        <label><input type="checkbox" value="4" />Other</label>
+        </fieldset>
+        <fieldset>
+          <label>Comments <textarea id="comments" rows="4" cols="40" placeholder="Enter your comments here..."></textarea>
+          </label>
+        </fieldset>
+        <input id="submit" type="submit" id="submit" />
+      </form>
+    </body>
+
+body {
+  background: silver;
+  font-size: 18px;
+  margin: 0;
+  width: 100%
+  }
+  h1 {
+    font-size: 40px;
+    margin: 1em 0;
+    text-align: center;
+    font-family: Lucida Console;
+  }
+p {
+  text-align: center;
+  margin: 1em 0; 
+}
+form {
+  padding: 0 70; 
+}
+fieldset {
+  border: none;
+}
+label {
+  display: grid;
+}
+input[type="radio"] {
+  display: block;
+  margin-top: 20
+}
+input[type="submit"] {
+  display: block;
+  width: 50%;
+  font-size: 1.3rem;
+  margin: 1em auto;
+  padding: 5;
+}
